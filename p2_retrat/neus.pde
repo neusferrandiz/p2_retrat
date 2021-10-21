@@ -1,4 +1,6 @@
-void neus(){
+void neus(float posx, float posy){
+  push();
+  translate(posx, posy);
    //cabell
   arc(m*6,m*6,m*12,m*8,radians(180),radians(270));
   arc(m*6,m*6,m*12,m*8,radians(270),radians(360));
@@ -42,4 +44,5 @@ void neus(){
   //coll
   line(m*4.8,m*14.9,m*4.8,m*18);
   line(m*7.2,m*14.9,m*7.2,m*18);
+  pop();
 }
